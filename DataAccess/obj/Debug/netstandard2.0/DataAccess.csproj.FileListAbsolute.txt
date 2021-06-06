@@ -10,3 +10,17 @@ C:\Users\Hp\Desktop\C# E.D\MyFinalProject\DataAccess\obj\Debug\netstandard2.0\Da
 C:\Users\Hp\Desktop\C# E.D\MyFinalProject\DataAccess\bin\Debug\netstandard2.0\Entities.dll
 C:\Users\Hp\Desktop\C# E.D\MyFinalProject\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
 C:\Users\Hp\Desktop\C# E.D\MyFinalProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\DataAccess\bin\Debug\netstandard2.0\Core.dll
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\DataAccess\bin\Debug\netstandard2.0\Core.pdb
