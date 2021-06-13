@@ -19,5 +19,7 @@ namespace Business.Abstract
         IDataResult<List<ProductDetailDto>> GetProductDetails();
         IDataResult<Product> GetById(int Pid);
         IResult AddProduct(Product product); //result donduruyo sonuc mesajı için 
+
+        IDataResult<List<Product>> GetProducts();
     }
 }

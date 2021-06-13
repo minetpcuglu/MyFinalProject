@@ -15,6 +15,8 @@ namespace Business.Concrete
     {
         IProductDal _productDal;
 
+        //[LogAspect] --->AOP
+        //[Validate]
         public ProductManager(IProductDal productDal)
         {
             _productDal = productDal;
@@ -37,15 +39,16 @@ namespace Business.Concrete
 
         public IDataResult<List<Product>> GetAll()
         {
-            if (DateTime.Now.Hour==22)  //ürün listelenmesini kapatmak isteyen bir kod 
-            {
-                return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime); //bakımda 
-            }
+        //    if (DateTime.Now.Hour == 22)  //ürün listelenmesini kapatmak isteyen bir kod 
+        //    {
+        //        return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime); //bakımda 
+        //    }
 
             //İş kodları ?
-            return new SuccessDataResult<List<Product>>(_productDal.GetAll(), Messages.ProductListed);
+            return new SuccessDataResult<List<Product>>(_productDal.GetAll());
             //succesdata result içinde bir list pproduct var ve onu ctorla parantez içindeki kosulları gönderiyoruz
         }
+       
 
         public IDataResult<List<Product>> GetAllByCategoryId(int id)
         {
@@ -70,6 +73,11 @@ namespace Business.Concrete
             }
             //? iş kuralı 
             return new SuccessDataResult<List<ProductDetailDto>>(_productDal.GetProductDetails());
+        }
+
+        public IDataResult<List<Product>> GetProducts()
+        {
+            return new SuccessDataResult<List<Product>>(_productDal.GetAll(), Messages.MaintenanceTime);
         }
     }
 }

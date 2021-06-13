@@ -14,7 +14,7 @@ namespace Core.DataAccess  //claslarınmızı interfaceleri kolaylıkla ulasmamk
     public interface IEntityRepository<T> where T : class,IEntity,new() //ICategori ve IProduct dal olarak teker teker yapcagımıza birleştirelim burdan verilen degerleri bunun için generic yapıları kullan yada sonradan eklenen customer 
     {
 
-        List<T> GetAll(Expression<Func<T,bool>>filter=null );  //filtreleme yapısını kullanmak ıcın (p=>p.vsvs) expression yapısını kullanırız
+        List<T> GetAll(Expression<Func<T,bool>>filter=null);  //filtreleme yapısını kullanmak ıcın (p=>p.vsvs) expression yapısını kullanırız
         T Get(Expression<Func<T, bool>> filter ); //Filtrelemeden tek bir detaya girmek için 
         void Add(T entity);
         void Update(T entity);

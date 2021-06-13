@@ -53,6 +53,8 @@ namespace Core.DataAccess.EntityFramework
                 return filter == null ? context.Set<TEntity>().ToList() : context.Set<TEntity>().Where(filter).ToList(); //nortwindeki product tablosunu tabloyu listeye cevir ve göster
                                                                                                                          // NUll sa                                           // : Filtre var sa filtreleyip ver
             }
+
+          
         }
 
         public void Update(TEntity entity)
