@@ -39,13 +39,13 @@ namespace Business.Concrete
 
         public IDataResult<List<Product>> GetAll()
         {
-        //    if (DateTime.Now.Hour == 22)  //ürün listelenmesini kapatmak isteyen bir kod 
-        //    {
-        //        return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime); //bakımda 
-        //    }
+            if (DateTime.Now.Hour == 23)  //ürün listelenmesini kapatmak isteyen bir kod 
+            {
+                return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime); //bakımda 
+            }
 
             //İş kodları ?
-            return new SuccessDataResult<List<Product>>(_productDal.GetAll());
+            return new SuccessDataResult<List<Product>>(_productDal.GetAll(),Messages.ProductListed);
             //succesdata result içinde bir list pproduct var ve onu ctorla parantez içindeki kosulları gönderiyoruz
         }
        
