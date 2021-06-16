@@ -1,17 +1,21 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidator;
+using Core.Aspects.Autofac.Validation;
+using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
 using Entities.DTOs;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Business.Concrete
 {
-    public class ProductManager : IProductService  
+    public class ProductManager : IProductService
     {
         IProductDal _productDal;
 
@@ -22,16 +26,16 @@ namespace Business.Concrete
             _productDal = productDal;
         }
 
+        [ValidationAspect(typeof(ProductValidator))]
         public IResult AddProduct(Product product)  //
         {
             //business codes ? 
-            
 
-            if (product.ProductName.Length<2)
-            {
-                //magic string  string metinlerin olması onun yerine contants klasorunde mesaj sınıfı acıldı
-                return new ErrorResult(Messages.ProductNameInValid);
-            }
+
+
+            //ValidationTool.Validate(new ProductValidator(), product);
+
+           
 
             _productDal.Add(product);
             return new SuccessResult(Messages.ProductAdded);    // result döndürdüğümüz için yapabilmemiz icin true ve mesajı constructer gerekir 
@@ -45,10 +49,10 @@ namespace Business.Concrete
             }
 
             //İş kodları ?
-            return new SuccessDataResult<List<Product>>(_productDal.GetAll(),Messages.ProductListed);
+            return new SuccessDataResult<List<Product>>(_productDal.GetAll(), Messages.ProductListed);
             //succesdata result içinde bir list pproduct var ve onu ctorla parantez içindeki kosulları gönderiyoruz
         }
-       
+
 
         public IDataResult<List<Product>> GetAllByCategoryId(int id)
         {
@@ -62,7 +66,7 @@ namespace Business.Concrete
 
         public IDataResult<List<Product>> GetByUnitPrice(decimal min, decimal max)
         {
-            return new SuccessDataResult<List<Product>>(_productDal.GetAll(p => p.UnitPrice >= min && p.UnitPrice<=max)); //iki fiyat aralıgında olan veriyi getir
+            return new SuccessDataResult<List<Product>>(_productDal.GetAll(p => p.UnitPrice >= min && p.UnitPrice <= max)); //iki fiyat aralıgında olan veriyi getir
         }
 
         public IDataResult<List<ProductDetailDto>> GetProductDetails()

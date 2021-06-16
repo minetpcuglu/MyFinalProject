@@ -33,10 +33,14 @@ namespace WebAPI
             //AOP //Autofac kullanýcaz
 
             services.AddControllers();  //singleton içerisinde data tutmuyorsak kullanýlýr 
-            services.AddSingleton<IProductService,ProductManager>();  // senden biri IPS Isterse sen arka planda PM olustur // arka plandacalýscak referans olustur 
-            services.AddSingleton<IProductDal, EfProductDal>();  //bagýmlýlýklarý gideriyoruz
+            //services.AddSingleton<IProductService,ProductManager>();  // senden biri IPS Isterse sen arka planda PM olustur // arka plandacalýscak referans olustur 
+            //services.AddSingleton<IProductDal, EfProductDal>();  //bagýmlýlýklarý gideriyoruz
         
         }
+
+
+
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
