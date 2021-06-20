@@ -11,8 +11,11 @@ namespace Business.Abstract
     {
         IDataResult<List<Category>> GetAll();
         Category GetById(int categoryId);
+        IResult AddCategory(Category category); 
+        IResult DeleteCategory(Category category); //result donduruyo sonuc mesajı için 
+        IResult UpdateCategory(Category category); 
 
-        IDataResult<List<Category>>  GetCategory();
+     
 
     }
 }

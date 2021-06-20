@@ -1,5 +1,7 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidator;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -12,28 +14,43 @@ namespace Business.Concrete
     public class CategoryManager : ICategoryService
     {
         //exception  //bagımlıgımızı const ıncktion ile yapıyoruz 
-        ICategoryDal _categoryDal;  //ampulden constructer yap 
+        ICategoryDal _categoryDal; 
 
         public CategoryManager(ICategoryDal categoryDal)
         {
            _categoryDal = categoryDal;
         }
 
+        [ValidationAspect(typeof (CategoryValidator))]
+        public IResult AddCategory(Category category)
+        {
+            _categoryDal.Add(category);
+            return new SuccessResult(Messages.CategoryAdded);
+        }
+
+        public IResult DeleteCategory(Category category)
+        {
+            _categoryDal.Delete(category);
+            return new SuccessResult(Messages.CategoryDeleted);
+        }
+
         public IDataResult<List<Category>> GetAll()
         {
             //iş kodlarını yazarız 
-            return new SuccessDataResult<List<Category>> (_categoryDal.GetAll(),Messages.ProductListed);
+            return new SuccessDataResult<List<Category>> (_categoryDal.GetAll(),Messages.CategoryListed);
         }
 
-        //select * from Categories where CategoryId = 3 
+      
         public Category GetById(int categoryId)
         {
             return _categoryDal.Get(c => c.CategoryId == categoryId);
         }
 
-        public IDataResult<List<Category>> GetCategory()
+       
+        public IResult UpdateCategory(Category category)
         {
-            return new SuccessDataResult<List<Category>>(_categoryDal.GetAll(), Messages.MaintenanceTime);
+            _categoryDal.Update(category);
+            return new SuccessResult(Messages.CategoryUpdated);
         }
     }
 }

@@ -30,7 +30,7 @@ namespace ConsoleUI
 
             //}
 
-            ProductManager pm = new ProductManager(new EfProductDal());
+            ProductManager pm = new ProductManager(new EfProductDal(), new CategoryManager(new EfCategoryDal()));
             foreach (var item in pm.GetById(34).Data.ProductName)
             {
                 Console.WriteLine(item);
@@ -43,7 +43,7 @@ namespace ConsoleUI
 
         private static void ProductTestleri()
         {
-            ProductManager productManager = new ProductManager(new EfProductDal());
+            ProductManager productManager = new ProductManager(new EfProductDal(),new CategoryManager(new EfCategoryDal()));
 
             foreach (var item in productManager.GetAll().Data)
             {

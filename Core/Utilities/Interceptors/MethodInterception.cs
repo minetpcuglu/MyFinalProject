@@ -4,9 +4,13 @@ using System;
 
 namespace Core.Utilities.Interceptors
 {
+    //nedir ?? calıstırmak isteiğin metodu nerede calıstırmak istediğini öncesinde, hata aldıgında ,sonrasında .... 
+    //bütün metotların catısı diyebiliriz bu kurallardan gecmeden hicbir metot calısmaz !
+    //virtual metotlar ezilmeyi bekleyen metotlar..
+    //Innovacation ... Add,Delete,Update,Insert gibi business metotlar 
     public abstract class MethodInterception : MethodInterceptionBaseAttribute
     {
-        protected virtual void OnBefore(IInvocation invocation) { }
+        protected virtual void OnBefore(IInvocation invocation) { } 
         protected virtual void OnAfter(IInvocation invocation) { }
         protected virtual void OnException(IInvocation invocation, System.Exception e) { }
         protected virtual void OnSuccess(IInvocation invocation) { }
