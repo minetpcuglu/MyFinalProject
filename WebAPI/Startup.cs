@@ -1,7 +1,11 @@
 using Business.Abstract;
 using Business.Concrete;
+using Core.Utilities.IoC;
+using Core.Utilities.Security.Encryption;
+using Core.Utilities.Security.JWT;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,6 +14,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,9 +38,34 @@ namespace WebAPI
             //AOP //Autofac kullanýcaz
 
             services.AddControllers();  //singleton içerisinde data tutmuyorsak kullanýlýr 
-            //services.AddSingleton<IProductService,ProductManager>();  // senden biri IPS Isterse sen arka planda PM olustur // arka plandacalýscak referans olustur 
-            //services.AddSingleton<IProductDal, EfProductDal>();  //bagýmlýlýklarý gideriyoruz
-        
+                                        //services.AddSingleton<IProductService,ProductManager>();  // senden biri IPS Isterse sen arka planda PM olustur // arka plandacalýscak referans olustur 
+                                        //services.AddSingleton<IProductDal, EfProductDal>();  //bagýmlýlýklarý gideriyoruz
+
+
+            var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidIssuer = tokenOptions.Issuer,
+                        ValidAudience = tokenOptions.Audience,
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = SecurityKeyHelper.CreateSecurityKey(tokenOptions.SecurityKey)
+
+                    };
+                });
+
+            //ServiceTool.Create(services);
+
+
+
+
+
         }
 
 
@@ -53,6 +83,8 @@ namespace WebAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseAuthentication(); //devreye sokuyoruz 
 
             app.UseAuthorization();
 

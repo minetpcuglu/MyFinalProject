@@ -19,7 +19,6 @@ C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\Business\bin\Debug\nets
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\Business\bin\Debug\netstandard2.0\Entities.dll
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\Business\bin\Debug\netstandard2.0\DataAccess.pdb
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\Business\bin\Debug\netstandard2.0\Entities.pdb
-C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\Business\obj\Debug\netstandard2.0\Business.csprojAssemblyReference.cache
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\Business\obj\Debug\netstandard2.0\Business.AssemblyInfoInputs.cache
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\Business\obj\Debug\netstandard2.0\Business.AssemblyInfo.cs
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\Business\obj\Debug\netstandard2.0\Business.csproj.CoreCompileInputs.cache
@@ -28,3 +27,4 @@ C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\Business\obj\Debug\nets
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\Business\obj\Debug\netstandard2.0\Business.pdb
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\Business\bin\Debug\netstandard2.0\Core.dll
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\Business\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\Business\obj\Debug\netstandard2.0\Business.csproj.AssemblyReference.cache

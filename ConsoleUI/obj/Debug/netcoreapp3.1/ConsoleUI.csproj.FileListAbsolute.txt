@@ -30,7 +30,6 @@ C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\bin\Debug\net
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Business.pdb
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\DataAccess.pdb
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Entities.pdb
-C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.csprojAssemblyReference.cache
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.AssemblyInfoInputs.cache
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.AssemblyInfo.cs
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.csproj.CoreCompileInputs.cache
@@ -85,3 +84,7 @@ C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\bin\Debug\net
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.csproj.AssemblyReference.cache
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll

@@ -6,7 +6,6 @@ C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\WebAPI\bin\Debug\netcor
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\WebAPI.runtimeconfig.dev.json
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\WebAPI.dll
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\WebAPI.pdb
-C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csprojAssemblyReference.cache
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.AssemblyInfoInputs.cache
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.AssemblyInfo.cs
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CoreCompileInputs.cache
@@ -71,3 +70,6 @@ C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\WebAPI\bin\Debug\netcor
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.AssemblyReference.cache
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\minet\OneDrive\Masaüstü\C# E.D\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
