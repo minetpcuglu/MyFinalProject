@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rVzfcESoxKvpQG6/4DFODcLX+vhxcHb0cPdH/pZJAcEap7LPtzld4qZUcyXqNvDJq2DLLtYXOyNvqQDc4bKPhw==",
+  "dgSpecHash": "rVOcjp65zH2hOLxm7cTerXUO6/78umZTMeryQzc+BfN+HG8Wv6pcSqltx6dKY9CdZh5LRHBkMFxet+sYNAlNVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\Business\\Business.csproj",
+  "projectFilePath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\minet\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\minet\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",

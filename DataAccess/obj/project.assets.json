@@ -6632,11 +6632,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\minet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\minet\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6653,11 +6653,11 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\Core\\Core.csproj"
+            "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\Core\\Core.csproj"
             },
-            "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\Entities\\Entities.csproj"
+            "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\Entities\\Entities.csproj"
             }
           }
         }
@@ -6693,7 +6693,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

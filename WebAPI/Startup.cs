@@ -8,6 +8,7 @@ using DataAccess.Concrete.EntityFramework;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -41,6 +42,7 @@ namespace WebAPI
                                         //services.AddSingleton<IProductService,ProductManager>();  // senden biri IPS Isterse sen arka planda PM olustur // arka plandacalýscak referans olustur 
                                         //services.AddSingleton<IProductDal, EfProductDal>();  //bagýmlýlýklarý gideriyoruz
 
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
 
@@ -60,7 +62,7 @@ namespace WebAPI
                     };
                 });
 
-            //ServiceTool.Create(services);
+            ServiceTool.Create(services);
 
 
 

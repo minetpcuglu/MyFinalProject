@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tg+cD3+IHtNc5adMA5vvi8we9PYN900Rfh7F11nbkRQn6CkXTq/R/Vnk7nfbP2gNJ9J7FPlZGYJFeG4rSB2NWA==",
+  "dgSpecHash": "IteJkqyICDe7Q/Y1BiYyfCuFdsi30i28xk0G+WToi2Dz7WqAO9gug6+vh7MQKZjJlHz6PTN7bM7/PJwG4CUniA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\minet\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\minet\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",

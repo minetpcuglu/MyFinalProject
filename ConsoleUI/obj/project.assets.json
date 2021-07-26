@@ -6060,11 +6060,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\ConsoleUI\\ConsoleUI.csproj",
+      "projectUniqueName": "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\ConsoleUI\\ConsoleUI.csproj",
       "projectName": "ConsoleUI",
-      "projectPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\ConsoleUI\\ConsoleUI.csproj",
+      "projectPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\ConsoleUI\\ConsoleUI.csproj",
       "packagesPath": "C:\\Users\\minet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\ConsoleUI\\obj\\",
+      "outputPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\ConsoleUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\minet\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6081,14 +6081,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\Business\\Business.csproj"
+            "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\Business\\Business.csproj"
             },
-            "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\C# E.D\\MyFinalProject\\Entities\\Entities.csproj"
+            "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\Entities\\Entities.csproj"
             }
           }
         }
@@ -6117,7 +6117,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

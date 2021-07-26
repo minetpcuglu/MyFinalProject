@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Core.Utilities.Security.Encryption
 {
-    class SigningCredentialsHelper
+   public class SigningCredentialsHelper
     {
         public static SigningCredentials CreateSigningCredentials(SecurityKey securityKey)   //sistemi kullanmak için elimizde olanları veriyoruz
         {

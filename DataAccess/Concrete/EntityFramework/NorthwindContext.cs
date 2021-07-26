@@ -14,7 +14,7 @@ namespace DataAccess.Concrete.EntityFramework
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-RKDCHFH;Database=Northwind;Trusted_Connection=true");  //sql kullanıcaz nasıl baglancaz belirtelim hangi veri tabanını baglancaz ? 
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-RQ8KHFA;Database=NORTHWND;Trusted_Connection=true");  //sql kullanıcaz nasıl baglancaz belirtelim hangi veri tabanını baglancaz ? 
         }
 
         public DbSet<Product> Products { get; set; }   //hangi tablo hangi sınıfa baglancak bunu belirliyoruz

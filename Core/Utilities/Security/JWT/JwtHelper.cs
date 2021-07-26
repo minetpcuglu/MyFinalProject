@@ -23,7 +23,7 @@ namespace Core.Utilities.Security.JWT
         {
             Configuration = configuration;
             _tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();   //?appsettings.json tokenoptions böümüm al ve 
-
+            _accessTokenExpiration = DateTime.Now.AddMinutes(_tokenOptions.AccessTokenExpiration);
         }
         public AccessToken CreateToken(User user, List<OperationClaim> operationClaims)
         {
@@ -56,7 +56,7 @@ namespace Core.Utilities.Security.JWT
             return jwt;
         }
 
-        private IEnumerable<Claim> SetClaims(User user, List<OperationClaim> operationClaims)
+        private IEnumerable<Claim> SetClaims(User user, List<OperationClaim> operationClaims)  //claimleri set etmek için operasyon 
         {
             var claims = new List<Claim>();
             claims.AddNameIdentifier(user.Id.ToString());
