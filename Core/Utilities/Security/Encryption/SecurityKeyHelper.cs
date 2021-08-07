@@ -6,7 +6,7 @@ using System.Text;
 namespace Core.Utilities.Security.Encryption
 {
     //appsetting.json da yazdıgımız yapıyı 
-    public class SecurityKeyHelper
+    public static class SecurityKeyHelper
     {
         public static SecurityKey CreateSecurityKey(string securityKey)  
         {

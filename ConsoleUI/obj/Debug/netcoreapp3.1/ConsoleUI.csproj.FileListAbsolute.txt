@@ -158,3 +158,7 @@ C:\Users\minet\OneDrive\Masaüstü\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\ob
 C:\Users\minet\OneDrive\Masaüstü\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.dll
 C:\Users\minet\OneDrive\Masaüstü\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.pdb
 C:\Users\minet\OneDrive\Masaüstü\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.genruntimeconfig.cache
+C:\Users\minet\OneDrive\Masaüstü\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.dll
+C:\Users\minet\OneDrive\Masaüstü\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\minet\OneDrive\Masaüstü\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.ObjectPool.dll
+C:\Users\minet\OneDrive\Masaüstü\Masaüstü\C# E.D\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.Net.Http.Headers.dll

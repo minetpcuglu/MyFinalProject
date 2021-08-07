@@ -1,5 +1,7 @@
 using Business.Abstract;
 using Business.Concrete;
+using Core.DependecyResolvers;
+using Core.Extensions;
 using Core.Utilities.IoC;
 using Core.Utilities.Security.Encryption;
 using Core.Utilities.Security.JWT;
@@ -32,7 +34,7 @@ namespace WebAPI
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+      
         public void ConfigureServices(IServiceCollection services)
         {
             //bu yapýyý daha farklý bir mimariye tasýyacaz onlar Autofac, ninject Castlewindsor , structureMap , DryInject ---> IoC Container 
@@ -42,11 +44,11 @@ namespace WebAPI
                                         //services.AddSingleton<IProductService,ProductManager>();  // senden biri IPS Isterse sen arka planda PM olustur // arka plandacalýscak referans olustur 
                                         //services.AddSingleton<IProductDal, EfProductDal>();  //bagýmlýlýklarý gideriyoruz
 
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();  //dependecy injection apý 
 
-            var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
+            var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>(); // bu sistemde authtikasyon olarak jwt kullanýlcak 
 
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme) 
                 .AddJwtBearer(options =>
                 {
                     options.TokenValidationParameters = new TokenValidationParameters
@@ -62,7 +64,10 @@ namespace WebAPI
                     };
                 });
 
-            ServiceTool.Create(services);
+            //istediðimiz kadar module (core modulu vs) baska modulleride kullanabiliriz
+            //ServiceTool.AddDependencyResolvers();
+
+            services.AddDependencyResolvers(new ICoreModule[] { new CoreModule() });
 
 
 
@@ -86,7 +91,7 @@ namespace WebAPI
 
             app.UseRouting();
 
-            app.UseAuthentication(); //devreye sokuyoruz 
+            app.UseAuthentication(); //middleware devreye sokuyoruz 
 
             app.UseAuthorization();
 

@@ -2,6 +2,9 @@
 using Business.BusinessAspects.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidator;
+using Core.Aspects.Autofac.Caching;
+using Core.Aspects.Autofac.Performance;
+using Core.Aspects.Autofac.Transaction;
 using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Business;
@@ -15,6 +18,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Transactions;
 
 namespace Business.Concrete
 {
@@ -35,8 +39,10 @@ namespace Business.Concrete
 
         }
 
+        //crosscutttıbgconcerns ler 
         [SecuredOperation("product.add,admin")]
         [ValidationAspect(typeof(ProductValidator))]
+        [CacheRemoveAspect("IProductService.Get")] //IProductServiceteki butun Getleri Sil
         public IResult AddProduct(Product product)
         {
             IResult result = BusinessRules.Run(CheckIfProductsNameExists(product.ProductName), CheckIfProductCountOfCategoryCorrent(product.CategoryId),CheckIfCategoryLimitExceded()); //iş kuralları 
@@ -60,6 +66,7 @@ namespace Business.Concrete
             return new SuccessResult(Messages.ProductDeleted);
         }
 
+        [CacheAspect]
         public IDataResult<List<Product>> GetAll()
         {
             if (DateTime.Now.Hour == 23)  //ürün listelenmesini kapatmak isteyen bir kod 
@@ -68,7 +75,7 @@ namespace Business.Concrete
             }
 
             //İş kodları ?
-
+            
             return new SuccessDataResult<List<Product>>(_productDal.GetAll(), Messages.ProductListed);
             //succesdata result içinde bir list pproduct var ve onu ctorla parantez içindeki kosulları gönderiyoruz
         }
@@ -79,6 +86,9 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Product>>(_productDal.GetAll(p => p.CategoryId == id));
         }
 
+        [CacheAspect]
+        [PerformanceAspect(5)] //bu metodun calısması 5 saniyeyi gecerse beni uyar sistemde yavaslık var bueaya eklersek sadece bunun için gecerli olur 
+        //ama aspectıntercepterselector eklersek butun metotlara etki eder 
         public IDataResult<Product> GetById(int Pid)
         {
             return new SuccessDataResult<Product>(_productDal.Get(x => x.ProductId == Pid));
@@ -104,6 +114,8 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Product>>(_productDal.GetAll(), Messages.MaintenanceTime);
         }
 
+
+        [CacheRemoveAspect("IProductService.Get")] //IProductServiceteki butun Getleri Sil
         public IResult UpdateProduct(Product product)
         {
             _productDal.Update(product);
@@ -143,6 +155,23 @@ namespace Business.Concrete
             }
             return new SuccessResult();
             
+        }
+
+        [TransactionScopeAspect]
+        public IResult AddTransactionalTest(Product product)
+        {
+            
+                AddProduct(product);
+                if (product.UnitPrice < 10)
+                {
+                    throw new Exception("");
+                }
+
+                AddProduct(product);
+
+           
+            return null;
+
         }
     }
 }
