@@ -15,14 +15,24 @@ namespace WebAPI.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
-        [HttpGet("Get")]
-        public List<Category> Get()
 
+        ICategoryService _categoryService; //field  default private
+
+        public CategoriesController(ICategoryService categoryService)
         {
-            ICategoryService manager = new CategoryManager(new EfCategoryDal());
+            _categoryService = categoryService;
+        }
 
-            var result = manager.GetAll();
-            return result.Data;
+        [HttpGet("getall")]
+        public IActionResult GetAll()
+        {
+            var result = _categoryService.GetAll();
+
+            if (result.Success)
+            {
+                return Ok(result);  //postamndaki send 200 döndür demek 
+            }
+            return BadRequest(result);
         }
     }
 }

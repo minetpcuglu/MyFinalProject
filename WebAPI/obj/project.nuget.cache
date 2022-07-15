@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6fl8fHXQ367NuS4bgy4fwut2wrV59mrNvGfxg0qf3Crq+6sF9/TPg7J8CAUdkt1FaOvhnWB9ePdqQIRY548Rqw==",
+  "dgSpecHash": "3q7BLKPjmAjXa6CdhkhpgOS2WXuY9ss4tyUo0ePoQ0eWvUuv65WN/9iMxRL4NfNKW2HVe9C/Cigc5hlU8bczQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\minet\\Source\\Repos\\MyFinalProject\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\minet\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\minet\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
@@ -116,7 +116,8 @@
     "C:\\Users\\minet\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\minet\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\minet\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\minet\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\minet\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\minet\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "urbzTFQQvt0tfEpfhKs530s3F1lApq5cx94Iarx8XeTyCUNjf1tRM08+3AjiF7uBMaNTpBXaSyki+8TDAWdSFw==",
+  "dgSpecHash": "Jn2n4TJR+OrSBPd1R5HG3Hrxc4sp5vGklmhFQTQ5RnjTarmAG5uQgEuD4LIoyiu9zn9CXgX5MeemT5xDp1AmpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\minet\\OneDrive\\Masaüstü\\Masaüstü\\C# E.D\\MyFinalProject\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\minet\\Source\\Repos\\MyFinalProject\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\minet\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\minet\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
